@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="hash_blue">#56AAF7</color>
+    <color name="input_bg">#FFFFFF</color>
+    <color name="grey_bg">#E6E6E6</color>
+    <color name="hint_text">#444444</color>
+    <color name="stroke_default">#E0E0E0</color>
+    <color name="stroke_focused">#56AAF7</color>
+</resources>

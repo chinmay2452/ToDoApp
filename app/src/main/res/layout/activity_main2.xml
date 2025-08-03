@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/commonbg"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="Welcome User!!"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_margin="60dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Let me help you plan your day and do tasks"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/welcome" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_tasks"
+        android:layout_width="396dp"
+        android:layout_height="272dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/intro">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:hint="Name"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/emailregister"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:hint="Email"
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_margin="12dp"
+                app:layout_constraintTop_toBottomOf="@id/name" />
+
+            <EditText
+                android:id="@+id/registerpwd"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_margin="12dp"
+                app:layout_constraintTop_toBottomOf="@id/emailregister" />
+
+            <EditText
+                android:id="@+id/confirm_pwd"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_margin="12dp"
+                app:layout_constraintTop_toBottomOf="@id/registerpwd" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="176dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/hash_blue"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_margin="24dp"
+        app:layout_constraintTop_toBottomOf="@id/card_tasks" />
+
+    <TextView
+        android:id="@+id/textsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Sign In"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
