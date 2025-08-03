@@ -21,7 +21,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="60dp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -34,7 +33,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="8dp"
         app:layout_constraintTop_toBottomOf="@id/welcome" />
 
     <androidx.cardview.widget.CardView
@@ -77,7 +75,6 @@
                 android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_margin="12dp"
                 app:layout_constraintTop_toBottomOf="@id/name" />
 
             <EditText
@@ -90,7 +87,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_margin="12dp"
                 app:layout_constraintTop_toBottomOf="@id/emailregister" />
 
             <EditText
@@ -104,7 +100,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_margin="12dp"
                 app:layout_constraintTop_toBottomOf="@id/registerpwd" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -122,7 +117,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="24dp"
         app:layout_constraintTop_toBottomOf="@id/card_tasks" />
 
     <TextView
@@ -135,7 +129,23 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="8dp"
         app:layout_constraintTop_toBottomOf="@id/button" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_google_signin"
+        android:layout_width="176dp"
+        android:layout_height="53dp"
+        android:layout_marginHorizontal="32dp"
+        android:gravity="center_vertical"
+        android:text="Sign in with Google"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textsignin"
+        app:layout_constraintVertical_bias="0.208" />
 </androidx.constraintlayout.widget.ConstraintLayout>
